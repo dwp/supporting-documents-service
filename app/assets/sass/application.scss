@@ -1,0 +1,143 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+
+// Import GOV.UK Frontend and any extension styles if extensions have been configured
+@import "lib/extensions/extensions";
+
+// Patterns that aren't in Frontend
+@import "patterns/step-by-step-header";
+@import "patterns/step-by-step-nav";
+@import "patterns/step-by-step-related";
+@import "patterns/task-list";
+@import "patterns/related-items";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.app-step-nav__header {
+    border-top: none;
+}
+
+.app-step-nav__header:hover .app-step-nav__button:not(:focus), .app-step-nav__header:hover .app-step-nav__circle {
+    color: #0b0c0c;
+}
+
+.app-step-nav__title {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.govuk-header__logo,
+.govuk-header__content {
+  box-sizing: border-box;
+}
+
+.govuk-header__logo {
+  margin-bottom: 10px;
+  padding-right: 50px;
+}
+
+@media (min-width: 40.0625em) {
+  .govuk-header__logo {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 48.0625em) {
+  .govuk-header__logo {
+    width: 50%;
+    padding-right: 15px;
+    float: left;
+    vertical-align: top;
+  }
+}
+
+@media (min-width: 48.0625em) {
+  .govuk-header__content {
+    width: 50%;
+    padding-left: 15px;
+    float: left;
+  }
+}
+
+.dwp-timeline {
+  border-left: 3px solid #005ea5;
+  list-style-type: none;
+  padding: 0;
+}
+
+.dwp-timeline__entry {
+  margin: 2em 0;
+  padding-left: 1em;
+  position: relative;
+}
+
+
+
+.dwp-timeline__entry::before {
+  background-color: #005ea5;
+  content: ' ';
+  height: 3px;
+  left: 0;
+  position: absolute;
+  top: .5em;
+  width: 10px;
+}
+
+.dwp-timeline__entry .dwp-timeline__title {
+  display: block;
+  font-weight: 700;
+}
+
+.dwp-timeline__entry .dwp-timeline__author,
+.dwp-timeline__entry .dwp-timeline__date {
+  color: #6f777b;
+  display: block;
+}
+
+.dwp-timeline__entry .dwp-timeline__info {
+  margin-top: 0;
+}
+
+.dwp-timeline__entry .dwp-timeline__body {
+  display: block;
+}
+
+
+//card css
+
+.dwp-card {
+  margin-bottom: 40px;
+  background: #fff;
+  border: 1px solid #d8dde0;
+  position: relative;
+  width: 100%;
+}
+
+.dwp-card__content {
+  padding: 24px;
+  position: relative;
+}
+
+.dwp-card--clickable {
+  border-bottom-width: 4px;
+}
+
+.dwp-card--clickable:hover {
+  border-color: #aeb7bd;
+}
+
+.dwp-card--clickable:hover, .dwp-card--clickable:active {
+  cursor: pointer;
+}
+
+@media (min-width: 40.0625em) {
+  .dwp-card {
+    margin-bottom: 48px;
+}
+  .dwp-card__content {
+    padding: 32px;
+}
+}
