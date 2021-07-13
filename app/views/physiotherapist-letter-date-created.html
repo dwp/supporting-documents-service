@@ -23,6 +23,55 @@
             This is a new document and needs to be reviewed.
           </span>
         </p>
+
+        <details class="govuk-details govuk-!-margin-bottom-1" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              View document edit history
+            </span>
+          </summary>
+          <div class="moj-timeline govuk-!-margin-top-4">
+
+            <div class="moj-timeline__item">
+          
+              <div class="moj-timeline__header">
+                <h2 class="moj-timeline__title">Document created date changed</h2>
+          
+                <p class="moj-timeline__byline">by Case Manager 1</p>
+          
+              </div>
+          
+              <p class="moj-timeline__date">
+                <time datetime="2019-06-14T14:01:00.000Z">5 May 2021 at 2:23pm</time>
+              </p>
+          
+              <div class="moj-timeline__description">
+                <p>To <strong>21 November 2020</strong></p>
+              </div>
+          
+            </div>
+
+            <div class="moj-timeline__item">
+          
+              <div class="moj-timeline__header">
+                <h2 class="moj-timeline__title">Document type changed</h2>
+          
+                <p class="moj-timeline__byline">by Case Manager 1</p>
+          
+              </div>
+          
+              <p class="moj-timeline__date">
+                <time datetime="2019-06-14T14:01:00.000Z">5 May 2021 at 2:01pm</time>
+              </p>
+          
+              <div class="moj-timeline__description">
+                <p>From <strong>Further evidence</strong> to <strong>Physiotherapist letter</strong></p>
+              </div>
+          
+            </div>
+
+          </div>
+        </details>
         
       </div>
     </div>
@@ -49,13 +98,27 @@
               </span>
                 Check document details
             </h2>
+
+            <div class="govuk-notification-banner govuk-notification-banner--success govuk-!-margin-bottom-2" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+              <div class="govuk-notification-banner__header">
+                <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                  Success
+                </h2>
+              </div>
+              <div class="govuk-notification-banner__content">
+                <h3 class="govuk-notification-banner__heading">
+                  You changed the document created date
+                </h3>
+              </div>
+            </div>
+
             <dl class="govuk-summary-list">
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
                   Document type
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  Further evidence
+                  Physiotherapist letter
                 </dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="document-type.html">
@@ -78,7 +141,7 @@
                   Document created 
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  
+                  21 November 2020
                 </dd>
                 <dd class="govuk-summary-list__actions">
                   <a class="govuk-link" href="date-created.html">
