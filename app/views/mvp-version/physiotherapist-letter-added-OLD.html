@@ -35,6 +35,25 @@
             <div class="moj-timeline__item">
           
               <div class="moj-timeline__header">
+                <h2 class="moj-timeline__title">Document status changed</h2>
+          
+                <p class="moj-timeline__byline">by Case Manager 1</p>
+          
+              </div>
+          
+              <p class="moj-timeline__date">
+                <time datetime="2019-06-14T14:01:00.000Z">5 May 2021 at 2:37pm</time>
+              </p>
+          
+              <div class="moj-timeline__description">
+                <p>From <strong>New document</strong> to <strong>Added to claim</strong></p>
+              </div>
+          
+            </div>
+
+            <div class="moj-timeline__item">
+          
+              <div class="moj-timeline__header">
                 <h2 class="moj-timeline__title">Added to claim</h2>
           
                 <p class="moj-timeline__byline">by Case Manager 1</p>
@@ -117,7 +136,7 @@
     </div>
   </div>
 
-  <div class="govuk-grid-row govuk-!-margin-bottom-6">
+  <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
       <iframe class="document" src="/public/pdfs/PhysiotherapyRecommendations.pdf"></iframe>
     </div>
@@ -155,19 +174,6 @@
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  Date of document
-                </dt>
-                <dd class="govuk-summary-list__value">
-                  19 November 2020
-                </dd>
-                <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="date-created.html">
-                    Change<span class="govuk-visually-hidden"> document date</span>
-                  </a>
-                </dd>
-              </div>
-              <div class="govuk-summary-list__row">
-                <dt class="govuk-summary-list__key">
                   Date received
                 </dt>
                 <dd class="govuk-summary-list__value">
@@ -178,7 +184,20 @@
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  Benefit received for
+                  Document created 
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  21 November 2020
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="date-created.html">
+                    Change<span class="govuk-visually-hidden"> date created</span>
+                  </a>
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Benefit type
                 </dt>
                 <dd class="govuk-summary-list__value">
                   PIP
@@ -194,6 +213,9 @@
                   Not harmful
                 </dd>
                 <dd class="govuk-summary-list__actions">
+                  <a class="govuk-link" href="harmful-info.html">
+                    Change<span class="govuk-visually-hidden"> harmful information flag</span>
+                  </a>
                 </dd>
               </div>
             </dl>
@@ -268,24 +290,166 @@
           </div>
         </li>
 
+        <li class="app-step-nav__step" id="link-this-document-to-assessment-activities">
+          <div class="app-step-nav__header" data-position="4">
+            <h2 class="app-step-nav__title govuk-body govuk-!-margin-bottom-2">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 4
+                  </span>
+                </span>
+              </span>
+                Link this document to assessment activities
+              </span>
+            </h2>
+
+            <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+              <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+                    <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                      PIP claim 12 April 2021
+                    </span>
+                  </h2>
+                </div>
+                <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                  
+                  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                    <h3>Day to day life</h3>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="france">
+                      <label class="govuk-label govuk-checkboxes__label" for="countries">
+                        Preparing food
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="france">
+                      <label class="govuk-label govuk-checkboxes__label" for="countries">
+                        Taking nutrition
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="france">
+                      <label class="govuk-label govuk-checkboxes__label" for="countries">
+                        Managing therapy
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="france">
+                      <label class="govuk-label govuk-checkboxes__label" for="countries">
+                        Washing and bathing
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="france">
+                      <label class="govuk-label govuk-checkboxes__label" for="countries">
+                        Managing toilet needs
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="france">
+                      <label class="govuk-label govuk-checkboxes__label" for="countries">
+                        Dressing and undressing
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="france">
+                      <label class="govuk-label govuk-checkboxes__label" for="countries">
+                        Communicating verbally
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="france">
+                      <label class="govuk-label govuk-checkboxes__label" for="countries">
+                        Reading and understanding signs, symbols and words
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="france">
+                      <label class="govuk-label govuk-checkboxes__label" for="countries">
+                        Engaging face to face
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="france">
+                      <label class="govuk-label govuk-checkboxes__label" for="countries">
+                        Budgeting
+                      </label>
+                    </div>
+
+                    <h3>Mobility</h3>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="france">
+                      <label class="govuk-label govuk-checkboxes__label" for="countries">
+                        Planning and following journeys
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="countries" name="countries" type="checkbox" value="france">
+                      <label class="govuk-label govuk-checkboxes__label" for="countries">
+                        Moving around
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                  <h2 class="govuk-accordion__section-heading">
+                    <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                      UC claim 30 April 2021
+                    </span>
+                  </h2>
+                </div>
+                <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                  <p class='govuk-body'>Assessment activites will appear here once the document has been added to a claim.</p>
+                </div>
+              </div>
+              
+            </div>
+
+          </div>
+        </li>
+
+        <li class="app-step-nav__step" id="set-document-status">
+          <div class="app-step-nav__header" data-position="5">
+            <h2 class="app-step-nav__title govuk-body govuk-!-margin-bottom-2">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 5
+                  </span>
+                </span>
+              </span>
+                Set the status of this document
+              </span>
+            </h2>
+
+            <div class="govuk-form-group">
+              <select class="govuk-select govuk-!-width-one-half" id="sort" name="sort">
+                <option value="new">New document</option>
+                <option value="not-added">Not added to claim</option>
+                <option value="added" selected>Added to claim</option>
+                <option value="prepared">Linked to assessment</option>
+              </select>
+            </div>
+
+          </div>
+        </li>
+
       </ol>
     </div>
   </div>
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-      <div class="govuk-button-group">
-        <a href="confirmation.html" aria-describedby="confirmation">
-          <button class="govuk-button" data-module="govuk-button">
-            Save changes
-          </button>
-        </a>  
-        <a href="document-list.html" aria-describedby="confirmation">
-          <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-            Not useful
-          </button>
-        </a>  
-      </div>
+      <a href="confirmation.html" aria-describedby="confirmation">
+        <button class="govuk-button" data-module="govuk-button">
+          Save and continue
+        </button>
+      </a>  
     </div>
   </div>
 </div>  
