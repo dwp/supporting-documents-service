@@ -51,7 +51,7 @@
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
-                  Date DWP received
+                  Date received
                 </dt>
                 <dd class="govuk-summary-list__value">
                   21 April 2021
@@ -80,14 +80,35 @@
 
       <aside class="app-related-items" role="complementary">
         <h2 class="govuk-heading-m" id="subsection-title">
-          Download
+          Add document to claim
         </h2>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="PIP" name="claim" type="checkbox" value="PIP">
+                <label class="govuk-label govuk-checkboxes__label" for="PIP">
+                  <strong>PIP claim</strong> 12 April 2021
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="UC" name="claim" type="checkbox" value="UC">
+                <label class="govuk-label govuk-checkboxes__label" for="UC">
+                  <strong>UC claim</strong> 30 April 2021
+                </label>
+              </div>
+            </div>
+        
+          </fieldset>
+        </div>
+
         <nav role="navigation" aria-labelledby="subsection-title">
           <ul class="govuk-list govuk-!-font-size-16">
             <li>
-              <a href="/public/pdfs/PhysiotherapyRecommendations.pdf" download>
+              <a href="confirmation.html">
                 <button class="govuk-button" data-module="govuk-button">
-                  Download this document
+                  Add to claim
                 </button>
               </a>
             </li>
