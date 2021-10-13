@@ -6,7 +6,16 @@
 
 
 {% block beforeContent %}
-<a href="index" class="govuk-back-link">Back</a>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="referral-information.html">Claimant details</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Claimant documents</a>
+    </li>
+  </ol>
+</div>
 {% endblock %}
 
 {% block content %}

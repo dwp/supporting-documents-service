@@ -4,8 +4,20 @@
   Document review
 {% endblock %}
 
-{% block beforeContent %}
-  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="referral-information.html">Claimant details</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="document-list.html">Claimant documents</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Document review</a>
+    </li>
+  </ol>
+</div>
 {% endblock %}
 
 {% block content %}

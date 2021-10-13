@@ -1,0 +1,50 @@
+{% extends "layout-key-details.html" %}
+
+{% block pageTitle %}
+  Confirmation page
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="referral-information.html">Claimant details</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="document-list-new2.html">Claimant documents</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="pip2-new.html">Document review</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Confirmation</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <div class="govuk-panel govuk-panel--confirmation govuk-!-margin-bottom-7">
+        <h1 class="govuk-panel__title">PIP2 questionnaire</h1>
+        <div class="govuk-panel__body">
+          <strong>You have not made any changes to this document
+        </div>
+      </div>
+    </div>
+  </div>    
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h2 class="govuk-heading-m">Choose your next step</h2>
+      <p><a href="document-list-new2.html">View all documents for this claimant</a></p>
+      <p><a href="referral-information.html">Return to the claimant details page</a></p>
+
+    </div>
+  </div>
+
+{% endblock %}
