@@ -5,7 +5,19 @@
 {% endblock %}
 
 {% block beforeContent %}
-<a href="document-list-new1.html" class="govuk-back-link">Back</a>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="referral-information.html">Claimant details</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="document-list.html">Claimant documents</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Document review</a>
+    </li>
+  </ol>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -15,10 +27,10 @@
 
       <h1 class="govuk-heading-l">Document review</h1>
 
-      <strong class="govuk-tag govuk-tag--yellow">
-        New document
+      <strong class="govuk-tag govuk-tag--blue">
+        Downloaded
       </strong>
-      <span class="govuk-body-s">This is a new document and needs to be reviewed.</span>
+      <span class="govuk-body-s">This document was downloaded on 7 Sep 2021.</span>
 
       <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
@@ -27,7 +39,7 @@
 
   <div class="govuk-grid-row govuk-!-margin-bottom-6">
     <div class="govuk-grid-column-full">
-      <iframe class="document" src="/public/pdfs/PhysiotherapyRecommendations.pdf"></iframe>
+      <iframe class="document" src="/public/pdfs/prescription.pdf"></iframe>
     </div>
   </div>  
 
@@ -43,7 +55,7 @@
                   Document type
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  Further evidence
+                  Medical prescription
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
@@ -83,7 +95,7 @@
           <ul class="govuk-list govuk-!-font-size-16">
             <li>
               <a href="/public/pdfs/PhysiotherapyRecommendations.pdf" download>
-                <button class="govuk-button govuk-button--secondary govuk-!-margin-bottom-2" data-module="govuk-button">
+                <button class="govuk-button govuk-!-margin-bottom-2" data-module="govuk-button">
                   Download this document
                 </button>
               </a>
