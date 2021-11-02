@@ -16,9 +16,9 @@
 
       <h1 class="govuk-heading-l">Claimant documents</h2>
 
-      <p class="govuk-body-s">Last updated from DRS at 02:08 on 16 Sep 2021</p>
+      <p class="govuk-body-s" id="last-updated">Last updated from DRS at 02:08 on 16 Sep 2021</p>
       
-      <table class="govuk-table" data-module="moj-sortable-table">
+      <table class="govuk-table" data-module="moj-sortable-table" aria-describedby="last-updated">
 
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
@@ -27,7 +27,7 @@
       
             <th scope="col" class="govuk-table__header column-width-10" aria-sort="none">Benefit type</th>
 
-            <th scope="col" class="govuk-table__header column-width-15" aria-sort="descending">Date of document</th>
+            <th scope="col" class="govuk-table__header column-width-15" aria-sort="none">Date of document</th>
 
             <th scope="col" class="govuk-table__header column-width-15" aria-sort="descending">Date DWP received</th>            
 
