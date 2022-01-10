@@ -147,6 +147,8 @@ iframe.document {
 }
 }
 
+//custom column widths
+
 .column-width-10 {
   width: 10%;
 }
@@ -172,4 +174,10 @@ iframe.document {
 
 .govuk-panel__body a {
   color: white;
+}
+
+//details description colour
+
+.document-details {
+  color: $govuk-secondary-text-colour;
 }

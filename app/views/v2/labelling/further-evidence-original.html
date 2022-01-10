@@ -27,7 +27,7 @@
 
   <div class="govuk-grid-row govuk-!-margin-bottom-6">
     <div class="govuk-grid-column-full">
-      <iframe class="document" src="/public/pdfs/JaneDoe_PIP2Questionnaire_120921.pdf" title="PIP2 document"></iframe>
+      <iframe class="document" src="/public/pdfs/hospital-appointment-letter.pdf" title="PIP2 document"></iframe>
     </div>
   </div>  
 
@@ -64,7 +64,7 @@
                   Document label
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <a href="document-label.html" class="govuk-link">Add</a>
+                  <a href="document-type.html" class="govuk-link">Add</a>
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
@@ -79,18 +79,18 @@
 
             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-        <dl class="govuk-summary-list govuk-summary-list--no-border govuk-!-margin-bottom-2">
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Comments
-            </dt>
-            <dd class="govuk-summary-list__value">
-              <a href="document-label.html" class="govuk-link">Add</a>
-            </dd>
-          </div>
-        </dl>
+            <div class="govuk-form-group">
 
-        <p>Add a comment if it helps to describe the contents of the document.</p>
+              <h2 class="govuk-label-wrapper">
+                <label class="govuk-label govuk-label--m" for="add-comments">Comment on this document</label>
+              </h2>
+    
+              <div id="add-comments-hint" class="govuk-hint">
+                Add a comment if it helps to describe the contents of the document.
+              </div>
+              <textarea class="govuk-textarea" id="add-comments" name="add-comments" rows="5" aria-describedby="add-comments-hint"></textarea>
+            
+            </div>     
 
         <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
@@ -143,7 +143,7 @@
           </legend>
 
           <div class="govuk-hint">
-            Leaving this unchecked marks this as a new document.
+            Tick this to confirm this document has been looked at.
           </div>
         
           <div class="govuk-checkboxes" data-module="govuk-checkboxes">

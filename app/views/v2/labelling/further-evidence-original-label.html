@@ -27,12 +27,25 @@
 
   <div class="govuk-grid-row govuk-!-margin-bottom-6">
     <div class="govuk-grid-column-full">
-      <iframe class="document" src="/public/pdfs/JaneDoe_PIP2Questionnaire_120921.pdf" title="PIP2 document"></iframe>
+      <iframe class="document" src="/public/pdfs/hospital-appointment-letter.pdf" title="PIP2 document"></iframe>
     </div>
   </div>  
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-notification-banner govuk-notification-banner--success govuk-!-margin-bottom-2" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+        <div class="govuk-notification-banner__header">
+          <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+            Success
+          </h2>
+        </div>
+        <div class="govuk-notification-banner__content">
+          <h3 class="govuk-notification-banner__heading">
+            You added a document label
+          </h3>
+        </div>
+      </div>
 
             <dl class="govuk-summary-list govuk-summary-list--no-border">
               <div class="govuk-summary-list__row">
@@ -42,6 +55,8 @@
                 <dd class="govuk-summary-list__value">
                   Further evidence
                 </dd>
+                <dd class="govuk-summary-list__actions">
+                </dd>
               </div>
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
@@ -49,6 +64,8 @@
                 </dt>
                 <dd class="govuk-summary-list__value">
                   21 April 2021
+                </dd>
+                <dd class="govuk-summary-list__actions">
                 </dd>
               </div>
               <div class="govuk-summary-list__row">
@@ -58,27 +75,20 @@
                 <dd class="govuk-summary-list__value">
                   PIP
                 </dd>
+                <dd class="govuk-summary-list__actions">
+                </dd>
               </div>
-            </dl>
-
-            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-
-            <dl class="govuk-summary-list govuk-summary-list--no-border govuk-!-margin-bottom-2">
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
                   Document label
                 </dt>
                 <dd class="govuk-summary-list__value">
-                  <a href="document-label.html" class="govuk-link">Add</a>
+                  NHS hospital appointment
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                  <a href="document-type.html" class="govuk-link">Change</a>
                 </dd>
               </div>
-            </dl>
-
-            <p>A document label can be helpful if the document type is inaccurate.</p>
-
-            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-            <dl class="govuk-summary-list govuk-summary-list--no-border govuk-!-margin-bottom-2">
               <div class="govuk-summary-list__row">
                 <dt class="govuk-summary-list__key">
                   Date of document
@@ -86,26 +96,25 @@
                 <dd class="govuk-summary-list__value">
                   <a href="document-label.html" class="govuk-link">Add</a>
                 </dd>
+                <dd class="govuk-summary-list__actions">
+                </dd>
               </div>
             </dl>
 
-            <p>The date of the document can be used to understand how old the document is.</p>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
+            <div class="govuk-form-group">
+
+              <h2 class="govuk-label-wrapper">
+                <label class="govuk-label govuk-label--m" for="add-comments">Comment on this document</label>
+              </h2>
+    
+              <div id="add-comments-hint" class="govuk-hint">
+                Add a comment if it helps to describe the contents of the document.
+              </div>
+              <textarea class="govuk-textarea" id="add-comments" name="add-comments" rows="5" aria-describedby="add-comments-hint"></textarea>
             
-        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
-
-        <dl class="govuk-summary-list govuk-summary-list--no-border govuk-!-margin-bottom-2">
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Comments
-            </dt>
-            <dd class="govuk-summary-list__value">
-              <a href="add-comment.html" class="govuk-link">Add</a>
-            </dd>
-          </div>
-        </dl>
-
-        <p>Add a comment if it helps to describe the contents of the document.</p>
+            </div>     
 
         <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
