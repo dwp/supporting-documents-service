@@ -98,28 +98,58 @@
                   </h2>
                 </div>
                 <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-                  
+
                   <div class="govuk-notification-banner govuk-notification-banner--success govuk-!-margin-bottom-6" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
                     <div class="govuk-notification-banner__header">
                       <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-                        You added a date of document
+                        You removed the date of document
                       </h2>
                     </div>
                   </div>
+                  
+                  
+                  <form class="form" action="further-evidence-single-date" method="post">
 
-                  <dl class="govuk-summary-list govuk-summary-list--no-border govuk-!-margin-bottom-2">
-                    <div class="govuk-summary-list__row">
-                      <dt class="govuk-summary-list__key">
-                        Date of document
-                      </dt>
-                      <dd class="govuk-summary-list__value">
-                        15 May 2021
-                      </dd>
-                      <dd class="govuk-summary-list__actions">
-                        <a href="further-evidence-single-date-removed.html" class="govuk-link">Remove</a>
-                      </dd>
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset" role="group" aria-describedby="date-created-hint">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                          <h1 class="govuk-fieldset__heading">
+                            Date of document
+                          </h1>
+                        </legend>
+                        <div id="passport-issued-hint" class="govuk-hint">
+                          This could be the date printed on a letter, or the date of an appointment
+                        </div>
+                        <div class="govuk-date-input" id="document-created-date">
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="date-created-day">
+                                Day
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="date-created-day" name="date-created-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="date-created-month">
+                                Month
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="date-created-month" name="date-created-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                          </div>
+                          <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                              <label class="govuk-label govuk-date-input__label" for="date-created-year">
+                                Year
+                              </label>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="date-created-year" name="date-created-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                          </div>
+                        </div>
+                    
+                      </fieldset>
                     </div>
-                  </dl>
+            
+                    <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Add date of document</button>
+            
+                  </form>
 
                 </div>
               </div>
