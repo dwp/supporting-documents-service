@@ -181,3 +181,29 @@ iframe.document {
 .document-details {
   color: $govuk-secondary-text-colour;
 }
+
+//dwp-comments
+
+.dwp-comment_name {
+  @include govuk-font($size: 19, $weight: bold);
+  display: inline;
+}
+
+.dwp-comment_time {
+  @include govuk-font($size: 19);
+  color: $govuk-secondary-text-colour;
+  display: inline;
+  margin: 0;
+}
+
+.dwp-comment_content {
+  @include govuk-font($size: 19);
+  margin-top: govuk-spacing(2);
+}
+
+//doc review grey section 
+
+.doc-review-grey {
+  background-color: govuk-colour("light-grey");
+  padding: 30px;
+}
