@@ -15,10 +15,10 @@
 
       <h1 class="govuk-heading-l">Document review</h1>
 
-      <strong class="govuk-tag govuk-tag--yellow">
-        New document
+      <strong class="govuk-tag govuk-tag--green">
+        Added to claim
       </strong>
-      <span class="govuk-body-s">This is a new document and needs to be reviewed.</span>
+      <span class="govuk-body-s">This document has been added to PIP claim - 12 Sep 2021</span>
 
       <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
@@ -236,7 +236,7 @@
                             <option>Hospital death certificate</option>
                             <option>Hospital document</option>
                             <option>Hospital gender recognition certificate</option>
-                            <option>Hospital letter</option>
+                            <option selected>Hospital letter</option>
                             <option>Hospital medical evidence not relevant to the claim</option>
                             <option>Hospital medical history</option>
                             <option>Hospital medical printout</option>
@@ -384,21 +384,21 @@
                               <label class="govuk-label govuk-date-input__label" for="date-created-day">
                                 Day
                               </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="date-created-day" name="date-created-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="date-created-day" name="date-created-day" type="text" pattern="[0-9]*" inputmode="numeric" value="15"></div>
                           </div>
                           <div class="govuk-date-input__item">
                             <div class="govuk-form-group">
                               <label class="govuk-label govuk-date-input__label" for="date-created-month">
                                 Month
                               </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="date-created-month" name="date-created-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="date-created-month" name="date-created-month" type="text" pattern="[0-9]*" inputmode="numeric" value="May"></div>
                           </div>
                           <div class="govuk-date-input__item">
                             <div class="govuk-form-group">
                               <label class="govuk-label govuk-date-input__label" for="date-created-year">
                                 Year
                               </label>
-                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="date-created-year" name="date-created-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="date-created-year" name="date-created-year" type="text" pattern="[0-9]*" inputmode="numeric" value="2021"></div>
                           </div>
                         </div>
                     
@@ -422,6 +422,23 @@
                       Add a comment if it helps to describe the contents of the document.
                     </div>
                     <textarea class="govuk-textarea" id="add-comments" name="add-comments" rows="5" aria-describedby="add-comments-hint"></textarea>
+
+                    <div class="dwp-comment">
+        
+                      <div class="dwp-comment_header">
+                        <h2 class="dwp-comment_name">Gabriel Brennan</h2>
+                  
+                        <p class="dwp-comment_time">on 21 Nov 2021 at 3:15pm</p>
+                  
+                      </div>
+                  
+                      <div class="dwp-comment_content">
+                        <p>This document confirms the claimants hospital appointment and confirmed diagnosis of breast cancer.</p>
+                      </div>
+
+                      <a class="govuk-link" href="#">Remove</a>
+                  
+                    </div>
                   
                   </div> 
                 </div>
